@@ -1,69 +1,44 @@
-<!DOCTYPE html> 
-<!-- ! tab to have the start and / tab for a comment -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mochi's portflio</title>
-    <!-- link  tab for the style sheet link to the css -->
-    <link rel="stylesheet" href="styles.css">
+    <title>Mochi-photos</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+    </style>
+    <link rel="stylesheet" href="css/Main.css">
 </head>
 <body>
-    <!-- Navbar section short nav.navbar tab create container -->
-    <nav class="navbar">
-        <!-- creating a container -->
-        <div class="navbar__container">
-            <a href="/" id="navbar__logo">Mochi's photos</a>
-            <div class="navbar__toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-        <ul class="navbar__menu">
-        <li class="navbar__items">
-            <a href="#home" class="navbar__links" id="home-page">Home</a>
-        </li>
-        <li class="navbar__items">
-            <a href="#Contacts" class="navbar__links" id="Contacts-page">Contacts</a>
-        </li>
-        <li class="navbar__items">
-            <a href="#About" class="navbar__links" id="About-page">About</a>
-        </li>
-        <li class="navbar__items">
-            <a href="#Photos" class="navbar__links" id="Photo-page">Photo</a>
-        </li>
-        <li class="navbar__btn">
-            <a href="#sign-up" class="button" id="signupe">Sign up</a>
-        </li>
-        </ul>
-    </nav>
-    <!--  -->
-    <div class="main">
-        <div class="main__container">
-            <div class="main__content">
-                <h1>
-                    Next gene
-                </h1>
-                <h2>tech</h2>
-                <p>see what whats our difference</p>
-                <button class="main__btn">
-                    <a href="/">More</a>
-                </button>
-            </div>
-            <div class="main__img--container">
-                <img src="" alt="" id="main__img">
-            </div>
+    <header>
+        <!-- Hamburger icon for mobile menu -->
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <!-- Mobile menu -->
+        <nav class="mobile-menu" id="mobileMenu">
+            <ul id="categoryLinks">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="gallery"></div>
+
+    <div id="content">
+        <h1 class="Name">{{ site.full_name }}</h1>
+        <div class="gallery"></div>
+    </div>
+    <div id="modal" class="modal">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <img id="modal-image" src="" alt="">
+    </div>
+    <div class="footer">
+        <div class="links">
+          <a id="instagram" class="links__icon" href="https://www.instagram.com/{{ site.instagram }}">
+            <span class="view-ig"> View {{ site.full_name }}'s Instagram </span>
+            <i class="fa fa-instagram fa-lg"></i>
+          </a>
         </div>
     </div>
-
-<script src="app.js">
-    import { Application } from '@splinetool/runtime';
-
-    const canvas = document.getElementById('canvas3d');
-    const app = new Application(canvas);
-    app.load('https://prod.spline.design/lauhZmwjnsUpOp-F/scene.splinecode');
-
-</script>
 </body>
+<script src="scripts/mainphotos.js">
+</script>
 </html>
