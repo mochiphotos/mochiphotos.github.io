@@ -1,0 +1,17 @@
+# The title that appears on the tab
+title: JC Gallery
+
+# The title on the web page
+full_name: JANELLE'S gallery
+
+# Handle
+instagram: janelle.cheung
+
+# Your name, as you want it to appear underneath each post and in the footer
+author: Janelle Cheung
+
+# Your email if you want it to be linked on the contact page
+author_email: 
+
+# The directory for category index pages. Change it to something else if
+category_dir: /

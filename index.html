@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mochi-photos</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+    </style>
+    <link rel="stylesheet" href="css/Main.css">
+</head>
+<body>
+    <header>
+        <!-- Hamburger icon for mobile menu -->
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <!-- Mobile menu -->
+        <nav class="mobile-menu" id="mobileMenu">
+            <ul id="categoryLinks">
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="gallery"></div>
+
+    <div id="content">
+        <h1 class="Name">{{ site.full_name }}</h1>
+        <div class="gallery"></div>
+    </div>
+    <div id="modal" class="modal">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <img id="modal-image" src="" alt="">
+    </div>
+    <div class="footer">
+        <div class="links">
+          <a id="instagram" class="links__icon" href="https://www.instagram.com/{{ site.instagram }}">
+            <span class="view-ig"> View {{ site.full_name }}'s Instagram </span>
+            <i class="fa fa-instagram fa-lg"></i>
+          </a>
+        </div>
+    </div>
+</body>
+<script src="scripts/mainphotos.js">
+</script>
+</html>
+
+
