@@ -29,7 +29,7 @@ function generateGalleryHTML(data) {
         galleryHTML += `<h2><a href=${category}.html style="color: var(--brown); text-decoration: none;">${category}</h2></a><div class="item">`;
 
         file.forEach((file,i)=> {
-            if(!file.startsWith('.')&& i <=3){
+            if(!file.startsWith('.')&& i <=2){
                 galleryHTML += `
                     <div class="img${category}" style="--position:${i}">
                         <img src="photos/${category}/${file}" alt="${file}">
