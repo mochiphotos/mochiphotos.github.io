@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landscape</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+    </style>
+    <link rel="stylesheet" href="css/Rest.css">
+</head>
+<body>
+    <header class = header>
+        <!-- Hamburger icon for mobile menu -->
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <!-- Mobile menu -->
+        <nav class="mobile-menu" id="mobileMenu">
+            <ul id="categoryLinks">
+                <li><a href="index.html">{{ site.full_name }}</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="content">
+        <div class="gallery"></div>
+    </div>
+    <div id="modal" class="modal">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <img id="modal-image" src="" alt="">
+    </div>
+    <div class="footer">
+        <div class="links">
+          <a id="instagram" class="links__icon" href="https://www.instagram.com/{{ site.instagram }}">
+            <span class="view-ig"> View {{ site.full_name }}'s Instagram </span>
+            <i class="fa fa-instagram fa-lg"></i>
+          </a>
+        </div>
+    </div>
+</body>
+<script src="scripts/Rest.js">
+</script>
+</html>
