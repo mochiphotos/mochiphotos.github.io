@@ -32,7 +32,7 @@ function generateGalleryHTML(data) {
             if(!file.startsWith('.')&& i <=3){
                 galleryHTML += `
                     <div class="img${category}" style="--position:${i}">
-                        <img src="images/${category}/${file}" alt="${file}">
+                        <img src="photos/${category}/${file}" alt="${file}">
                     </div>`;
             }
             

@@ -34,7 +34,7 @@ function GalleryHTML(data, Sort){
                 if(!file.startsWith('.')){
                     galleryhtml += `
                         <div class="img" style="--position:${i}">
-                            <img src="images/${category}/${file}" alt="${file}">
+                            <img src="photos/${category}/${file}" alt="${file}">
                         </div>`;
                 }
             });
