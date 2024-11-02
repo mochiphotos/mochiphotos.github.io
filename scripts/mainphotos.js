@@ -38,12 +38,11 @@ function generateGalleryHTML(data) {
 
         file.forEach((file,i)=> {
             if(!file.startsWith('.')&& i <=3){
-                galleryHTML += `
-                    <div class="img${category}" style="--position:${i}">
+                    galleryhtml += `
+                    <div class="img" style="--position:${i}">
                         <img src="photos/${category}/${file}" alt="${file}">
                     </div>`;
             }
-            
         });
         galleryHTML += `</div>`
     }
