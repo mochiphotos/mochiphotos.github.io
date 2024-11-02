@@ -66,9 +66,15 @@ header {
     .menu-icon {
         display: block;
     }
-    h2, /* Hide category headers on mobile */
-    .Name {
+    h2 {
         display: none;
+    } /* Hide category headers on mobile */
+    .Name {
+        position: absolute;
+        transform: translateY(-50vw);
+        width: 50%;
+        text-align: center;
+        right: 20vw;
     }
 }
 
@@ -84,6 +90,10 @@ header {
     height: 100vh;
 }
 
+.Name.active{
+    display: none;
+}
+
 
 /* Name for website  */
 h1 {
@@ -94,13 +104,14 @@ h1 {
 
 .Name {
     position: fixed;
-    bottom: 0;
-    padding: 1rem;
-    padding-right: 3%;
-    background-color: rgb(230, 72, 51, 0.4);
+    bottom: 1rem;
+    padding: 2vh;
+    padding-right: 0;
+    background-color:#90aead9d;
     /* text-align: end; */
     margin: 10px;
     z-index: 1;
+    transform: translateX(1rem);
 }
 .Name:hover{
     display: none;
@@ -118,6 +129,15 @@ h2{
     right: 2rem;
     text-shadow: 1px 1px 2px black;
 }
+
+.active {
+    /* Catogory */
+    /* background-color: #90aead96; */
+    transform: scale(1.1);
+    transform: translateX(-1vw);
+    text-shadow: 10px 10px 20px #253b3b;
+}
+
 
 /* Images */
 img {
