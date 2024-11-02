@@ -70,10 +70,12 @@ function closeModal() {
 //toggle for menu bar 
 const menu = document.getElementById('mobileMenu');
 const icon = document.querySelector(".menu-icon");
+const TitleName = document.querySelector(".Name");
 
 function toggleMenu() {
     menu.classList.toggle('active');
     icon.classList.toggle('active');
+    TitleName.classList.toggle('active');
 }
 
 //Hovering text 
@@ -84,5 +86,5 @@ function cathover(h2) {
 }
 
 function titleoff(){
-    title.classList.toggle('active');
+    TitleName.classList.toggle('active');
 }
