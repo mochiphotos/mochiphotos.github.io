@@ -114,9 +114,9 @@ h1 {
 }
 
 .Name {
-    padding: 1rem;
-    padding-right: 3%;
+    padding: 0rem 1em;
     color: var(--pale);
+    font-size: 2em;
 }
 
 /* Heading for folders  */
