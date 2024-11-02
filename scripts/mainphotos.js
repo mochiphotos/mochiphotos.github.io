@@ -20,7 +20,7 @@ fetch('data.json')  // Path to your JSON file
                 h2.addEventListener("mouseover", () => cathover(h2));
                 h2.addEventListener("mouseover", () => titleoff());
                 h2.addEventListener("mouseout", () => h2.classList.remove("active"));
-                h2.addEventListener("mouseout", () => title.classList.remove("active")); // Remove active on mouse out
+                h2.addEventListener("mouseout", () => TitleName.classList.remove("active")); // Remove active on mouse out
             });
         })
         .catch(error => console.error('Error fetching JSON:', error));
